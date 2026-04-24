@@ -2,3 +2,4 @@ astropy
 numpy
 astroalign
 streamlit
+cv2
