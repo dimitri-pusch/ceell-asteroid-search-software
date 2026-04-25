@@ -3,9 +3,9 @@ import numpy as np
 from astropy.io import fits
 import astroalign as aa
 import time
-import cv2 # Para desenhar o círculo
+import cv2
 
-st.set_page_config(page_title="CEELL Asteroid Search Software v2.1", layout="wide")
+st.set_page_config(page_title="CEELL Asteroid Search Software v3.1", layout="wide")
 
 def apply_mask_and_circles(img, coord_list, frame_idx):
     """Limpa o ruído de fundo e desenha o círculo no candidato."""
@@ -28,7 +28,7 @@ def apply_mask_and_circles(img, coord_list, frame_idx):
         
     return img_rgb
 
-st.title("☄️ CEELL Asteroid Search Software - Detection Mode")
+st.title("☄️ CEELL Asteroid Search Software")
 
 with st.sidebar:
     st.header("Configurações")
